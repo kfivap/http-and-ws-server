@@ -27,11 +27,12 @@ ws://localhost:1781/18942c20-e801-47c8-a822-7fd557c2106d
 ## list-users
 ### return array all users in this room
 
-```
 request: 
+```
 {"event": "list-users"}
-
+```
 response:
+```
 {
     "event": "list-users",
     "users": [
@@ -54,11 +55,12 @@ response:
 ## sign-up
 ### sets your name that will be visible for all users 
 
-```
 request: 
+```
 {"event": "sign-up", "data": {"name": "newName"}}
-
+```
 response:
+```
 {
     "event": "sign-up",
     "success": true
@@ -68,11 +70,12 @@ response:
 ## send message
 ### send message to all users in this room
 
-```
 request: 
+```
 {"event": "send-message", "data": {"text": "hello"}}
-
+```
 response will be broadcasted to all users in this room:
+```
 {
     "event": "new-message",
     "user": {
